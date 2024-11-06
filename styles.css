@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    padding: 10px;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.about {
+    display: flex;
+    background-color: dodgerblue;
+    
+}
+
+.myPhoto {
+    padding: 0px 75px;
+}
+
+.aboutInfo {
+    background-color: beige;
+}
+.work {
+   display: flex;
+   flex-direction: column;
+} 
+.projectContainer {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.project {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.623);
+}
+.projectImage {
+    background-color: darkslategray;
+    color: white;
+    height: 300px;
+}
+
+footer {
+  background-color:dodgerblue;
+}
+
+footer > *, .about > *, .work > * {
+    padding: 10px;
+}
+
+footer > * {
+    color: white;
+}
+
+
+.icon {
+    width: 20px;
+    margin: 5px;
+}
+
+.iconContainer, .projectHeader, .contactInfo {
+    display: flex;
+}
+
+.projectHeader {
+    justify-content: space-between;
+}
