@@ -12,10 +12,7 @@
     -webkit-font-smoothing: antialiased;
   }
   
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
+ 
   
   input, button, textarea, select {
     font: inherit;
@@ -50,20 +47,48 @@ body {
 
 .about {
     display: flex;
-    background-color: dodgerblue;
-    
+    padding: 40px; 
 }
 
-.myPhoto {
-    padding: 0px 75px;
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 450px;
+    z-index: -1;
+    background: #775e62;
+    transform-origin: top left;
+    transform: skewY(-15deg);
+}
+
+.myPhoto img {
+
+ 
+ 
+
+}
+
+.myName {
+    position: absolute;
+    transform: translatey(-100%);
+    color: #110a1d;
+    font-size: 30px;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: rgb(74, 74, 74) -2px 2px 5px;
 }
 
 .aboutInfo {
     background-color: beige;
+    margin: 40px;
+    transform: translateX(-60px);
+
+    
 }
 .work {
    display: flex;
    flex-direction: column;
+   padding: 40px; 
 } 
 .projectContainer {
     display: grid;
@@ -75,26 +100,35 @@ body {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.623);
 }
 .projectImage {
-    background-color: darkslategray;
+    background-color: #110a1d;
     color: white;
     height: 300px;
 }
 
 footer {
-  background-color:dodgerblue;
+    display: flex;
+    background-color:#775e62;
+    justify-content: space-between;
 }
 
-footer > *, .about > *, .work > * {
+
+footer div , .about > *, .work > * {
     padding: 10px;
 }
 
 footer > * {
     color: white;
 }
+.footerImage {
+    margin: 50px;
+    
+}
+
+
 
 
 .icon {
-    width: 20px;
+    width: 32px;
     margin: 5px;
 }
 

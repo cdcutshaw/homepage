@@ -8,9 +8,15 @@
 </head>
 <body>
     <main>
+        <div class="background"></div>
         <section class="about">
-            <div>
-                <img class="myPhoto" src="images/placeholder-headshot.jpg" alt="">
+            
+            <div class="myPhoto">
+                <picture>
+                    <source srcset="images/placeholder-headshot-600px.jpg " media="(min-width:600px)"/>
+                    <img src="images/placeholder-headshot-320px.png" alt="">
+                </picture>
+            
                 <div class="myName">Ashley Williams</div>
 
             </div>
@@ -18,9 +24,11 @@
                 <h1>About Me</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, atque dignissimos! Aut repudiandae, commodi placeat nihil tempore, quia voluptate explicabo blanditiis quibusdam veritatis quis unde earum sint nemo molestiae ab debitis iste repellendus harum dolor hic accusamus omnis culpa. A quo laboriosam magni, ipsum ad deserunt explicabo obcaecati deleniti eum?
                 </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, atque dignissimos! Aut repudiandae, commodi placeat nihil tempore, quia voluptate explicabo blanditiis quibusdam veritatis quis unde earum sint nemo molestiae ab debitis iste repellendus harum dolor hic accusamus omnis culpa. A quo laboriosam magni, ipsum ad deserunt explicabo obcaecati deleniti eum?
+                </p>
                 <div class="iconContainer">
-                    <img class="icon" src="images/github.svg" alt="github">
-                    <img class="icon" src="images/linkedin.svg" alt="github">
+                    <a href=""><img class="icon" src="images/github.svg" alt="github"></a>
+                    <a href=""><img class="icon" src="images/linkedin.svg" alt="github"></a>
                 </div>
             </div>
         </section>
@@ -32,8 +40,8 @@
                     <div class="projectHeader">
                         <h3>Project Name</h3>
                         <div class="iconContainer">
-                            <img class="icon" src="images/github.svg" alt="github">
-                            <img class="icon" src="images/open-in-new.svg" alt="open in new tab">
+                            <a href=""><img class="icon" src="images/github.svg" alt="github"></a>
+                            <a href=""><img class="icon" src="images/open-in-new.svg" alt="open in new tab"></a>
                         </div>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam repudiandae dicta hic, alias nam.</p>
@@ -43,8 +51,8 @@
                     <div class="projectHeader">
                         <h3>Project Name</h3>
                         <div class="iconContainer">
-                            <img class="icon" src="images/github.svg" alt="github">
-                            <img class="icon" src="images/open-in-new.svg" alt="open in new tab">
+                            <a href=""><img class="icon" src="images/github.svg" alt="github"></a>
+                            <a href=""><img class="icon" src="images/open-in-new.svg" alt="open in new tab"></a>
                         </div>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam repudiandae dicta hic, alias nam.</p>
@@ -54,8 +62,8 @@
                     <div class="projectHeader">
                         <h3>Project Name</h3>
                         <div class="iconContainer">
-                            <img class="icon" src="images/github.svg" alt="github">
-                            <img class="icon" src="images/open-in-new.svg" alt="open in new tab">
+                            <a href=""><img class="icon" src="images/github.svg" alt="github"></a>
+                            <a href=""><img class="icon" src="images/open-in-new.svg" alt="open in new tab"></a>
                         </div>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam repudiandae dicta hic, alias nam.</p>
@@ -65,8 +73,8 @@
                     <div class="projectHeader">
                         <h3>Project Name</h3>
                         <div class="iconContainer">
-                            <img class="icon" src="images/github.svg" alt="github">
-                            <img class="icon" src="images/open-in-new.svg" alt="open in new tab">
+                            <a href=""><img class="icon" src="images/github.svg" alt="github"></a>
+                            <a href=""><img class="icon" src="images/open-in-new.svg" alt="open in new tab"></a>
                         </div>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam repudiandae dicta hic, alias nam.</p>
@@ -76,8 +84,8 @@
                     <div class="projectHeader">
                         <h3>Project Name</h3>
                         <div class="iconContainer">
-                            <img class="icon" src="images/github.svg" alt="github">
-                            <img class="icon" src="images/open-in-new.svg" alt="open in new tab">
+                            <a href=""><img class="icon" src="images/github.svg" alt="github"></a>
+                            <a href=""><img class="icon" src="images/open-in-new.svg" alt="open in new tab"></a>
                         </div>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam repudiandae dicta hic, alias nam.</p>
@@ -87,7 +95,7 @@
                     <div class="projectHeader">
                         <h3>Project Name</h3>
                         <div class="iconContainer">
-                            <img class="icon" src="images/github.svg" alt="github">
+                            <a href=""><img class="icon" src="images/github.svg" alt="github"></a>
                             <img class="icon" src="images/open-in-new.svg" alt="open in new tab">
                         </div>
                     </div>
@@ -98,26 +106,29 @@
         </section>
     </main>
     <footer>
-        <h4>Contact Me</h4>
-        <p>Please get in touch if you think our work could be mutually beneficial</p>
         <div>
-            <div>123 Random Road</div>
-            <div>Random Town, California 12345</div>
-        </div>
-        <div>
-            <div class="contactInfo">
-                <img class="icon" src="images/phone-outline.svg" alt="phone">
-                <div>555-555-5555</div>
+            <h4>Contact Me</h4>
+            <p>Please get in touch if you think our work could be mutually beneficial</p>
+            <div>
+                <div>123 Random Road</div>
+                <div>Random Town, California 12345</div>
             </div>
-            <div class="contactInfo">
-                <img class="icon" src="images/email-outline.svg" alt="email">
-                <div>ashleywilliams.is.not.real@gmail.com</div>
+            <div>
+                <div class="contactInfo">
+                    <a href=""><img class="icon" src="images/phone-outline.svg" alt="phone"></a>
+                    <div>555-555-5555</div>
+                </div>
+                <div class="contactInfo">
+                    <a href=""><img class="icon" src="images/email-outline.svg" alt="email"></a>
+                    <div>ashleywilliams.is.not.real@gmail.com</div>
+                </div>
+            </div>
+            <div class="iconContainer"</div>
+                <a href=""><img class="icon" src="images/github.svg" alt="github"></a>
+                <a href=""><img class="icon" src="images/linkedin.svg" alt="github"></a>
             </div>
         </div>
-        <div class="iconContainer"</div>
-            <img class="icon" src="images/github.svg" alt="github">
-            <img class="icon" src="images/linkedin.svg" alt="github">
-        </div>
+        <img class="footerImage" src="images/footerImage.jpg" alt="">
     </footer>
 </body>
 </html>
